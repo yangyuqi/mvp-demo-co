@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_15"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_25"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="@dimen/dp_7"
+            android:layout_height="@dimen/dp_7"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/shape_small_circle_yellow_bg" />
+
+        <TextView
+            android:id="@+id/tv_tips_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toEndOf="@+id/tv_indicator"
+            android:text="01:34 >"
+            android:textColor="@color/color51A8FF"
+            android:textSize="@dimen/sp_8" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_recyclerview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="2134546454354543435151315313545343545345454534454343543545345343545345343543"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_9" />
+
+</LinearLayout>

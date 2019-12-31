@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_13"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_free"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_9"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_3"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/shape_free"
+            android:gravity="center"
+            android:text="@string/free"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/sp_6"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_9">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="古诗里的语法赏古诗里的语法赏析,古诗里的语法赏析,古诗里的语法析,古诗里的语法赏析,古诗里的语法.."
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_8" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_4">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_10"
+                android:text="12分48秒"
+                android:textColor="#FF4A4A4A"
+                android:textSize="@dimen/sp_7" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dp_34"
+                android:layout_height="@dimen/dp_8"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/layer_list_progress_drawable" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/sp_6"
+
+                />
+        </RelativeLayout>
+        <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginBottom="@dimen/dp_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_course"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="语文"-->
+        <!--android:textColor="#909399"-->
+        <!--android:textSize="@dimen/sp_6" />-->
+
+        <!--<View-->
+        <!--android:layout_width="@dimen/dp_1"-->
+        <!--android:layout_height="@dimen/dp_4"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="@dimen/dp_4"-->
+        <!--android:layout_marginRight="@dimen/dp_4"-->
+        <!--android:background="#DCDFE6" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_course_count"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="4捷克"-->
+        <!--android:textColor="#909399"-->
+        <!--android:textSize="@dimen/sp_6" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dp_20"-->
+        <!--android:drawableLeft="@drawable/play_yellow"-->
+        <!--android:drawablePadding="@dimen/dp_2"-->
+        <!--android:text="@string/play_count"-->
+        <!--android:textColor="#909399"-->
+        <!--android:textSize="@dimen/sp_6" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_play_count"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="2000"-->
+        <!--android:textColor="#909399"-->
+        <!--android:textSize="@dimen/sp_6"-->
+
+        <!--/>-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/add_download_info_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:text="练习模式"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_set_study_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="已开启"
+                android:textColor="@color/colorWhite" />
+
+            <ImageView
+                android:id="@+id/iv_image_change_study_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/open_study" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_download"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/alivc_download_downloading"-->
+            <!--android:drawablePadding="6dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="下载"-->
+            <!--android:textColor="@color/alivc_white"-->
+            <!--android:textSize="@dimen/alivc_more_features_font" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_cast_screen"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/alivc_screen_cast"-->
+            <!--android:drawablePadding="6dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="投屏"-->
+            <!--android:textColor="@color/alivc_white"-->
+            <!--android:textSize="@dimen/alivc_more_features_font" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_barrage"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/alivc_barrage"-->
+            <!--android:drawablePadding="6dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="弹幕设置"-->
+            <!--android:textColor="@color/alivc_white"-->
+            <!--android:textSize="@dimen/alivc_more_features_font" />-->
+        </LinearLayout>
+        <!--倍速分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhite" />
+        <!--倍速播放textView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="播放速度"
+            android:textColor="@color/colorWhite" />
+        <!--倍速切换第一排-->
+        <RadioGroup
+            android:id="@+id/alivc_rg_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/rb_speed_slow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="0.75x"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_speed_normal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="1.0x"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_speed_onequartern"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="1.25x"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_speed_onehalf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="1.5x"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+        </RadioGroup>
+        <!--倍速切换第二排-->
+        <RadioGroup
+            android:id="@+id/alivc_rg_speed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/rb_speed_once_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="1.75x"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_speed_twice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="2.0x"
+                android:textColor="@color/alivc_speed_text_color_blue"
+                android:visibility="gone" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite" />
+
+
+        <!--切换像素值-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="画面质量"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+        <!--切换像素值-->
+        <RadioGroup
+            android:id="@+id/alivc_rg_pixel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/rb_pixel_slow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="270p"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_pixel_normal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="480p"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_pixel_hight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="720p"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+
+            <RadioButton
+                android:id="@+id/rb_pixel_hightseter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="720p"
+                android:textColor="@color/alivc_speed_text_color_blue" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingTop="16dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="音量"
+                    android:textColor="@color/colorWhite" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/seek_voice"
+                    style="@style/alivc_info_seekbar_blue_voice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_seek_voice_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingTop="16dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="亮度"
+                    android:textColor="@color/colorWhite" />
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:id="@+id/seek_light"
+                    style="@style/alivc_info_seekbar_blue_light"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_seek_light_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

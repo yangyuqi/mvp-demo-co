@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+
+               android:layout_height="match_parent">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/dp_6"
+                   android:layout_marginTop="@dimen/dp_10"
+                   android:text="@string/teacher_introduce"
+                   android:textColor="@color/dark_gray_text" />
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/dp_10"
+                   android:layout_marginTop="@dimen/dp_13">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:id="@+id/iv_teacher"
+                       android:layout_width="@dimen/dp_35"
+                       android:layout_height="@dimen/dp_35"
+                       android:src="@drawable/default_head" />
+
+
+                   <TextView
+                       android:id="@+id/tv_introduce"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginLeft="@dimen/dp_16"
+                       android:layout_marginTop="@dimen/dp_5"
+                       android:layout_toRightOf="@id/iv_teacher"
+                       android:lineHeight="@dimen/dp_10"
+                       android:textColor="@color/dark_gray_text"
+                       android:textSize="@dimen/sp_7" />
+
+               </RelativeLayout>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/dp_6"
+                   android:layout_marginTop="@dimen/dp_30"
+                   android:text="@string/course_introduce"
+                   android:textColor="@color/dark_gray_text" />
+
+               <!--<TextView-->
+               <!--android:id="@+id/tv_course_introduce"-->
+               <!--android:layout_width="match_parent"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:layout_marginLeft="@dimen/dp_6"-->
+               <!--android:layout_marginRight="@dimen/dp_6"-->
+               <!--android:lineHeight="8dp"-->
+               <!--android:layout_marginTop="@dimen/dp_5"-->
+               <!--android:textColor="@color/dark_gray_text"-->
+               <!--android:textSize="@dimen/sp_7" />-->
+
+               <WebView
+                   android:id="@+id/webview"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+               </WebView>
+
+
+           </LinearLayout>
+       </ScrollView>
+
+</LinearLayout>

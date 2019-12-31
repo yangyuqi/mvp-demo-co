@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module_aliyun/module_aliyun.iml" filepath="$PROJECT_DIR$/../module_aliyun/module_aliyun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module_base/module_base.iml" filepath="$PROJECT_DIR$/../module_base/module_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../own_study_pad.iml" filepath="$PROJECT_DIR$/../own_study_pad.iml" />
+    </modules>
+  </component>
+</project>

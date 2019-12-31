@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--名称-->
+    <dbname value="ownstudy_pad" />
+    <!--版本号-->
+    <version value="1" />
+    <list>
+        <!--这里是类映射，必填-->
+        <mapping class="com.wxjz.module_base.db.bean.AnalysisBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.ExerciseBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.NotesBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.TipsBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.HistoryBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.ClassifyBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.UserInfoBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.CheckedSchool"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.DialogShow"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.SchoolItemBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.VideoPlayHistory"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.CheckgradeBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.GuestChooseGrade"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.FirstLoadBean"></mapping>
+        <mapping class="com.wxjz.module_base.db.bean.LoginUserInput"></mapping>
+    </list>
+</litepal>

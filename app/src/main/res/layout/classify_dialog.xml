@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="@dimen/dp_213"
+        android:layout_height="@dimen/dp_186"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bac">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/set_current"
+            android:textColor="#303133"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_xiaoxue"
+            android:layout_width="@dimen/dp_167"
+            android:layout_height="@dimen/dp_32"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/xueduan_select">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/iv_check_xiaoxue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/dui_gou"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_xiaoxue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/iv_check_xiaoxue"
+                    android:text="@string/xiaoxue"
+                    android:textColor="#303133"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_chuzhong"
+            android:layout_width="@dimen/dp_167"
+            android:layout_height="@dimen/dp_32"
+            android:layout_below="@id/rl_xiaoxue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/xueduan_unselect">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/iv_check_chuzhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/dui_gou"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_chuzhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/iv_check_chuzhong"
+                    android:text="@string/chuzhong"
+                    android:textColor="#303133"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:layout_below="@id/rlContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/delete" />
+</RelativeLayout>

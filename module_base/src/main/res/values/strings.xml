@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">module_base</string>
+    <string name="terminology_title">术语提示</string>
+    <string name="ql_loading">加载中</string>
+    <string name="folder_all">所有照片</string>
+    <string name="preview">预览</string>
+    <string name="only_school_user_login">只有合作学校可以学校账户登录哦</string>
+    <string name="lose_password_tips">如果您忘记密码，请联系学校管理员重置。</string>
+    <string name="contact_administrator">联系管理员</string>
+    <string name="administrator_number">19283029292</string>
+    <string name="lose_password_hint">账号初始密码为12345,可在我的-设置中修改。</string>
+    <string name="i_know">我知道了</string>
+    <string name="password_loading">密码登录</string>
+    <string name="please_enter_codeNumber">请输入登录号</string>
+    <string name="please_enter_password">请输入密码</string>
+    <string name="lose_passwroding">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="change_school">切换学校</string>
+    <string name="school_name">请先选择学校</string>
+    <string name="guest_login">先随便看看></string>
+    <string name="input_origin_password">输入原密码</string>
+    <string name="input_new_password">输入新密码</string>
+    <string name="input_new_password_again">再次输入新密码</string>
+    <string name="back">返回</string>
+    <string name="choose_school">选择学校</string>
+    <string name="please_enter_school_name">输入学校名称</string>
+    <string name="not_find_school">没有找到学校?</string>
+    <string name="choose_grade">选择年级</string>
+    <string name="select_the_learning_phase">选择学习阶段</string>
+    <string name="change_password">修改密码</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_11"
+    android:layout_marginTop="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_109"
+        android:layout_height="@dimen/dp_63">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_5">
+
+
+            <ImageView
+                android:id="@+id/iv_course"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_12"
+                android:background="@drawable/course_bg" />
+
+            <TextView
+                android:id="@+id/tv_sub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/sp_6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:background="@drawable/bantouming_bg">
+
+            <TextView
+                android:id="@+id/tv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_play_count"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:drawableLeft="@drawable/play"
+                android:drawablePadding="@dimen/dp_2"
+                android:text="@string/play_count"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_7" />
+
+            <TextView
+                android:id="@+id/tv_play_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_toRightOf="@id/tv_play"
+                android:text="2000"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_7" />
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/cb_record"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_6"
+            android:background="@drawable/note_check_selector"
+            android:button="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="古诗里的古诗里的语法赏析,古诗古诗里的语法赏析,古诗"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_7" />
+
+
+</LinearLayout>

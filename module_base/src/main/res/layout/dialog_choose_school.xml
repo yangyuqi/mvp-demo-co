@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_195"
+    android:layout_height="@dimen/dp_340"
+    android:background="@drawable/shape_choose_school"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/choose_school"
+        android:textColor="@color/black303133"
+        android:textSize="@dimen/sp_12" />
+    <!--搜索框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_14"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/shape_search_title"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_search_choose_school"
+            android:layout_width="@dimen/dp_6"
+            android:layout_height="@dimen/dp_6"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/ed_choose_school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_3"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@color/grayF2F2F2"
+            android:hint="@string/please_enter_school_name"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="@dimen/sp_7" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:src="@drawable/delete"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp_10">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_school_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_20" />
+
+        <com.wxjz.module_base.view.WaveSideBar
+            android:id="@+id/sideBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_20"
+            app:backgroundColor="@color/colorWhite"
+            app:chooseTextColor="@color/colorBlack"
+            app:circleRadius="@dimen/dp_12"
+            app:hintTextSize="@dimen/dp_16"
+            app:radius="@dimen/dp_10"
+            app:textColor="@color/colorBlack"
+            app:textSize="@dimen/sp_7" />
+
+        <TextView
+            android:id="@+id/tv_not_find_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="@string/not_find_school"
+            android:textColor="@color/blue4E96FB"
+            android:textSize="@dimen/sp_7" />
+    </FrameLayout>
+</LinearLayout>

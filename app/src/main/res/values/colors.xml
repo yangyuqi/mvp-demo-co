@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="normal_bac">#F6F7F7</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#4A4A4A</color>
+    <color name="loginBtnYellow">#FDCF00</color>
+    <color name="grayE8E8E8">#E8E8E8</color>
+    <color name="black303133">#303133</color>
+    <color name="grayC1C1C1">#C1C1C1</color>
+    <color name="grayF2F2F2">#F2F2F2</color>
+    <color name="grayE8E8">#E8E8E8</color>
+    <color name="gray909399">#909399</color>
+    <color name="blue4E96FB">#4E96FB</color>
+    <color name="blue003C00">#003C00</color>
+    <color name="gray_f5f6fa">#F5F6FA</color>
+    <color name="gray_787f88">#787F88</color>
+    <color name="gray_909399">#909399</color>
+    <color name="gray_003f">#00003F</color>
+    <color name="grayBBBBBB">#BBBBBB</color>
+    <color name="bantouming">#80000000</color>
+    <color name="grayE7E7E7">#E7E7E7</color>
+    <color name="whiteF5F6F8">#F5F6F8</color>
+    <color name="yellowFBD80B">#FBD80B</color>
+    <color name="whiteF0F2F5">#F0F2F5</color>
+    <color name="orangeEF563B">#EF563B</color>
+    <color name="whiteF5F6FA">#F5F6FA</color>
+    <color name="grayD9D9DB">#D9D9DB</color>
+</resources>

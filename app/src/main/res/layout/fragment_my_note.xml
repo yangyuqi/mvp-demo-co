@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp_7"
+    android:layout_marginRight="@dimen/dp_7"
+    android:background="@drawable/normal_item_bac">
+
+    <RelativeLayout
+
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginRight="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_7">
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/sl_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_16"
+                app:tl_indicator_color="#FDCF00"
+                app:tl_indicator_height="@dimen/dp_2"
+                app:tl_indicator_style="NORMAL"
+                app:tl_indicator_width="@dimen/dp_7"
+                app:tl_tab_padding="@dimen/dp_9"
+                app:tl_textBold="SELECT"
+                app:tl_textSelectColor="@color/black"
+                app:tl_textUnselectColor="@color/dark_gray"
+                app:tl_textsize="@dimen/sp_8" />
+
+            <LinearLayout
+                android:id="@+id/llChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+               >
+
+                <TextView
+
+                    android:id="@+id/tv_choose_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/choose_all"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_7" />
+
+                <View
+                    android:layout_width="@dimen/dp_0_5"
+                    android:layout_height="@dimen/dp_7"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_7" />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/delete"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_7" />
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_manage"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/manage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_8" />
+        </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_top" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="@dimen/dp_90"
+            android:layout_centerInParent="true"
+            android:src="@drawable/search_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/note_tip"
+            android:textColor="@color/dark_gray_text"
+            android:textSize="@dimen/sp_7" />
+    </RelativeLayout>
+</RelativeLayout>

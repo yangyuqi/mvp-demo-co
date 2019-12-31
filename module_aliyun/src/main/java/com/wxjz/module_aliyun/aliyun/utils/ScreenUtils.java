@@ -1,0 +1,73 @@
+package com.wxjz.module_aliyun.aliyun.utils;
+
+import android.content.Context;
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
+
+/*
+ * Copyright (C) 2010-2018 Alibaba Group Holding Limited.
+ */
+
+/**
+ * 屏幕相关的操作类
+ */
+public class ScreenUtils {
+    /**
+     * 获取宽度
+     *
+     * @param mContext 上下文
+     * @return 宽度值，px
+     */
+    public static int getWidth(Context mContext) {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        ((WindowManager) mContext.getApplicationContext().getSystemService(Context.WINDOW_SERVICE))
+            .getDefaultDisplay().getMetrics(displayMetrics);
+        return displayMetrics.widthPixels;
+    }
+
+    /**
+     * 获取高度
+     *
+     * @param mContext 上下文
+     * @return 高度值，px
+     */
+    public static int getHeight(Context mContext) {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        ((WindowManager) mContext.getApplicationContext().getSystemService(Context.WINDOW_SERVICE))
+            .getDefaultDisplay().getMetrics(displayMetrics);
+        return displayMetrics.heightPixels;
+    }
+
+    /**
+     * 是否在屏幕右侧
+     *
+     * @param mContext 上下文
+     * @param xPos     位置的x坐标值
+     * @return true：是。
+     */
+    public static boolean isInRight(Context mContext, int xPos) {
+        return (xPos > getWidth(mContext) / 2);
+    }
+
+    /**
+     * 是否在屏幕左侧
+     *
+     * @param mContext 上下文
+     * @param xPos     位置的x坐标值
+     * @return true：是。
+     */
+    public static boolean isInLeft(Context mContext, int xPos) {
+        return (xPos < getWidth(mContext) / 2);
+    }
+
+    public static int dip2px(Context context,float dipValue) {
+        DisplayMetrics dm = context.getApplicationContext().getResources().getDisplayMetrics();
+        return (int) (dipValue * dm.density + 0.5f);
+    }
+
+    public static int px2dip(Context context,float pxValue) {
+        DisplayMetrics dm = context.getApplicationContext().getResources().getDisplayMetrics();
+        return (int) (pxValue / dm.density + 0.5f);
+    }
+
+}

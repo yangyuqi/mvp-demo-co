@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/alivc_titlebar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/alivc_title_back"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:padding="@dimen/dp_2"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/alivc_title_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/alivc_titlebar_title_left_margin"
+            android:layout_marginLeft="@dimen/alivc_titlebar_title_left_margin"
+            android:layout_marginEnd="@dimen/alivc_titlebar_title_left_margin"
+            android:layout_marginRight="@dimen/alivc_titlebar_title_left_margin"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/alivc_white"
+            android:textSize="@dimen/alivc_titlebar_font_size" />
+
+        <ImageView
+            android:id="@+id/alivc_title_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/alivc_titlebar_title_right_margin"
+            android:src="@drawable/alivc_more" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/alivc_screen_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/alivc_screen_lock_left_margin"
+        android:layout_marginLeft="@dimen/alivc_screen_lock_left_margin"
+        android:src="@drawable/alivc_screen_unlock"
+        android:visibility="gone" />
+    <!--各种类型的点-->
+    <LinearLayout
+        android:id="@+id/llRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_55"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivNote"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:background="@drawable/note" />
+
+        <ImageView
+            android:id="@+id/ivHint"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/tips" />
+
+        <ImageView
+            android:id="@+id/ivExercise"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/exercise" />
+
+        <ImageView
+            android:id="@+id/ivAnalysis"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/terminology" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/controlbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/alivc_infobar_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <!--进度条-->
+        <com.wxjz.module_aliyun.aliyun.MutiPointSeekBar
+            android:id="@+id/alivc_info_large_seekbar"
+            style="@style/alivc_info_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_15" />
+        <!--进度提示-->
+        <RelativeLayout
+            android:id="@+id/alivc_info_large_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="bottom|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/alivc_player_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/alivc_info_large_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_2"
+                android:layout_toEndOf="@id/alivc_player_state"
+                android:textColor="@color/alivc_white"
+                android:textSize="@dimen/alivc_info_text_large_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_2"
+                android:layout_toEndOf="@+id/alivc_info_large_position"
+                android:textColor="@color/alivc_white"
+                android:textSize="@dimen/alivc_info_text_large_size" />
+
+            <TextView
+                android:id="@+id/alivc_info_large_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_2"
+                android:layout_toEndOf="@id/alivc_info_large_position"
+                android:textColor="@color/alivc_white"
+                android:textSize="@dimen/alivc_info_text_large_size" />
+
+            <TextView
+                android:id="@+id/tv_speed_value"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dp_2"
+                android:layout_toStartOf="@id/iv_exercise_status"
+                android:gravity="bottom"
+                android:text="@string/speed_value_2"
+                android:textColor="@color/alivc_white"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/iv_exercise_status"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toStartOf="@id/rl"
+                android:paddingLeft="@dimen/dp_2"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_2"
+                android:paddingBottom="@dimen/dp_2"
+                android:src="@drawable/exercise_open" />
+
+            <FrameLayout
+                android:id="@+id/rl"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/alivc_title_download"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="@dimen/dp_3"
+                    android:paddingTop="@dimen/dp_3"
+                    android:paddingRight="@dimen/dp_3"
+                    android:src="@drawable/icon_donwload" />
+
+                <ImageView
+                    android:id="@+id/iv_downloading_tag"
+                    android:layout_width="@dimen/dp_5"
+                    android:layout_height="@dimen/dp_5"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@drawable/downloading_yellow_circle"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!--切换清晰度-->
+            <Button
+                android:id="@+id/alivc_info_large_rate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alivc_rate_btn_nomal"
+                android:textColor="@color/alivc_white"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <!--没用上-->
+        <LinearLayout
+            android:id="@+id/alivc_info_small_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/alivc_info_small_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alivc_white"
+                android:textSize="@dimen/alivc_info_text_small_size" />
+
+            <TextView
+                android:id="@+id/alivc_info_small_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alivc_info_text_duration"
+                android:textSize="@dimen/alivc_info_text_small_size" />
+
+            <SeekBar
+                android:id="@+id/alivc_info_small_seekbar"
+                style="@style/alivc_info_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <!--切换全屏或者小屏按钮，暂时没用-->
+        <ImageView
+            android:id="@+id/alivc_screen_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/alivc_screen_lock_left_margin"
+        android:layout_marginRight="@dimen/alivc_screen_lock_left_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/alivc_screen_shot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/alivc_screen_shot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/alivc_screen_recoder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/alivc_recorder"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</merge>

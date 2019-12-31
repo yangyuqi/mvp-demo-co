@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_195"
+    android:layout_height="@dimen/dp_255"
+    android:background="@drawable/shape_login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <!--这是标题-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="@string/password_loading"
+        android:textColor="@color/black303133"
+        android:textSize="@dimen/sp_13" />
+    <!--这是登陆号输入框-->
+    <EditText
+        android:id="@+id/ed_login_codenumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_11"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/colorWhite"
+        android:hint="@string/please_enter_codeNumber"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/grayC1C1C1"
+        android:textSize="@dimen/sp_8" />
+    <!--这是分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/grayF2F2F2" />
+    <!--这是密码输入框-->
+    <EditText
+        android:id="@+id/ed_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_11"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colorWhite"
+        android:hint="@string/please_enter_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/grayC1C1C1"
+        android:textSize="@dimen/sp_8" />
+    <!--这是分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/grayF2F2F2" />
+
+    <TextView
+        android:id="@+id/tv_lose_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/lose_passwroding"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/sp_7" />
+
+
+    <!--这是登陆按钮-->
+    <TextView
+        android:id="@+id/tv_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+
+        android:background="@drawable/shape_login_btn_gray_radius_5"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/grayBBBBBB"
+        android:textSize="@dimen/sp_8" />
+
+    <!--学校登陆模式-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <LinearLayout
+            android:id="@+id/school_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@color/grayF2F2F2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/change_school"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp_7" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@color/grayF2F2F2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_school_icon"
+            android:layout_width="@dimen/dp_23"
+            android:layout_height="@dimen/dp_23"
+            android:layout_below="@+id/school_login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/school_user" />
+
+        <TextView
+            android:id="@+id/tv_school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_school_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/school_name"
+            android:textColor="@color/gray909399"
+            android:textSize="@dimen/sp_7" />
+
+        <TextView
+            android:id="@+id/tv_guest_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="@string/guest_login"
+            android:textColor="@color/blue4E96FB"
+            android:textSize="@dimen/sp_7" />
+    </RelativeLayout>
+</LinearLayout>

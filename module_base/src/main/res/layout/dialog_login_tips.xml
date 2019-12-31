@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_150"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dialog_login_tip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/dp_54"
+            android:text="您还未登录"
+            android:textColor="#303133"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:layout_width="@dimen/dp_117"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:text="目前为游客身份无法体验此功能，登录后体验更多功能"
+            android:textColor="#909399"
+            android:textSize="@dimen/sp_7" />
+
+        <Button
+            android:id="@+id/btn_go_to_login"
+            android:layout_width="@dimen/dp_117"
+            android:layout_height="@dimen/dp_18"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@drawable/shape_login_btn_yellow"
+            android:gravity="center"
+            android:text="去登录"
+            android:textColor="#303133"
+            android:textSize="@dimen/sp_7" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_dialog_close"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:src="@drawable/dialog_close" />
+
+</LinearLayout>

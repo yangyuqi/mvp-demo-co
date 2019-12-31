@@ -1,0 +1,122 @@
+<resources>
+
+    <style name="BottomCheckDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null
+        </item><!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="addDownloadDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="btn_style" parent="@android:style/Widget.Button.Small">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_round_bkg</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+        //是否浮现在activity之上,能够全屏
+        <item name="android:windowIsFloating">false</item>
+        //是否显示title
+        <item name="android:windowNoTitle">false</item>
+        //设置dialog的背景
+        <item name="android:background">@android:color/transparent</item>
+        //显示区域背景是否透明
+        <item name="android:windowBackground">@android:color/transparent</item>
+        //Dialog的windowFrame框为无
+        <item name="android:windowFrame">@null</item>
+        //是否半透明
+        <item name="android:windowIsTranslucent">true</item>
+        //就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5
+        <item name="android:backgroundDimAmount">0.2</item>
+        //显示区域以外是否使用黑色半透明背景
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+
+
+        <!-- 标题的和Message的文字颜色 -->
+        <!--<item name="android:textColorPrimary">@color/black</item>-->
+
+        <!-- 在使用v7包的alertDialog中无效，6.0中的app.alertDialog有效，这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@color/white</item>
+
+        <!-- 6.0有效，设置整个背景的颜色，在颜色后面就透明度无法使dailog透明 -->
+        <!-- 慎用，会出现奇怪的背景边框-->
+        <!--<item name="android:background">@color/white</item>-->
+
+        <!-- 有时无效，在某些系统上面设置背景颜色之后出现奇怪的背景，处这里设置背景为透明，为了隐藏边框 -->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+
+        <!-- 进入和退出动画，左进右出（系统自带） -->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+
+    </style>
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <style name="dialogRightAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_right_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+
+    <style name="progress_style" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:indeterminateOnly">false</item>
+    </style>
+
+    <style name="edit_line_style" parent="@android:style/Widget.EditText">
+        <item name="android:padding">5dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/edit_round_bkg</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="edit_5line_style" parent="edit_line_style">
+        <item name="android:maxLines">5</item>
+    </style>
+
+    <style name="alivc_info_seekbar" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:maxHeight">@dimen/alivc_info_seekbar_height</item>
+        <item name="android:minHeight">@dimen/alivc_info_seekbar_height</item>
+        <item name="android:paddingLeft">@dimen/alivc_info_seekbar_offset</item>
+        <item name="android:paddingRight">@dimen/alivc_info_seekbar_offset</item>
+        <item name="android:thumbOffset">@dimen/alivc_info_seekbar_offset</item>
+    </style>
+
+    <style name="alivc_info_seekbar_blue_voice" parent="alivc_info_seekbar">
+        <item name="android:progressDrawable">@drawable/alivc_info_seekbar_bg_blue</item>
+        <item name="android:indeterminateDrawable">@drawable/alivc_info_seekbar_bg_blue</item>
+        <item name="android:thumb">@drawable/alivc_dialog_seek_thumb</item>
+    </style>
+
+    <style name="alivc_info_seekbar_blue_light" parent="alivc_info_seekbar">
+        <item name="android:progressDrawable">@drawable/alivc_info_seekbar_bg_blue</item>
+        <item name="android:indeterminateDrawable">@drawable/alivc_info_seekbar_bg_blue</item>
+        <item name="android:thumb">@drawable/alivc_dialog_seek_thumb</item>
+    </style>
+</resources>

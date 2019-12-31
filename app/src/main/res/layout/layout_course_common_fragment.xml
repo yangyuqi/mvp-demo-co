@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/search_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="单科内容为空"
+            android:textColor="@color/dark_gray_text"
+            android:textSize="@dimen/sp_9" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_3"
+        android:orientation="horizontal">
+        <!--暂时不用，废弃了-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_top"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/dp_8"-->
+            <!--android:background="@drawable/normal_item_bac"-->
+            <!--android:visibility="gone">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_course_count"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="@dimen/dp_7"-->
+
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/sp_9" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_shaixuan"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="@dimen/dp_5"-->
+                    <!--android:text="@string/shaixuan"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/sp_9" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_shaixuan"-->
+                    <!--android:layout_width="@dimen/dp_10"-->
+                    <!--android:layout_height="@dimen/dp_10"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginRight="@dimen/dp_9"-->
+                    <!--android:background="@drawable/shaixuan_1" />-->
+
+
+            <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--单科侧边首页收起的状态-->
+        <LinearLayout
+            android:id="@+id/ll_column_close"
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="match_parent"
+            android:background="@color/whiteF5F6F8"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_22"
+                android:background="@color/yellowFDCF00">
+                <!--侧边按钮-->
+                <ImageView
+                    android:id="@+id/iv_column_close_status"
+                    android:layout_width="@dimen/dp_22"
+                    android:layout_height="@dimen/dp_22"
+                    android:src="@drawable/column" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--单科首页侧边展开的状态-->
+        <LinearLayout
+            android:id="@+id/ll_column_out"
+            android:layout_width="@dimen/dp_170"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!--展开-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_22"
+                android:background="@color/grayE7E7E7">
+
+                <ImageView
+                    android:id="@+id/iv_column_out_status"
+                    android:layout_width="@dimen/dp_22"
+                    android:layout_height="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/column" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_6"
+                    android:layout_height="@dimen/dp_6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:src="@drawable/back" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ry_video_select_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_right_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_right_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/search_empty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_right_empty"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="单科内容为空"
+                    android:textColor="@color/dark_gray_text"
+                    android:textSize="@dimen/sp_9" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_all_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_17">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <!--暂时不用了，废弃了-->
+        <RelativeLayout
+            android:id="@+id/rlEmptyShaiXuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_empty_shaixuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_empty_shaixuan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="暂无筛选结果"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/sp_9" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

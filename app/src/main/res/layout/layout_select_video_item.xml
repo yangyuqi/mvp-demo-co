@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_115"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_7"
+    android:layout_marginTop="@dimen/dp_13"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/dp_115"
+        android:layout_height="@dimen/dp_66"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="@dimen/dp_115"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_8" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_6"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/play_black"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:text="播放量2000"
+            android:textColor="#909399"
+            android:textSize="@dimen/sp_6" />
+
+    </LinearLayout>
+</LinearLayout>

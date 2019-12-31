@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp_7"
+    android:layout_marginRight="@dimen/dp_7"
+    android:background="@drawable/normal_item_bac">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_3">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_146"
+                android:layout_height="@dimen/dp_21"
+                android:background="@drawable/change_password_btn_gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_21"
+                    android:src="@drawable/today_course" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:text="@string/today_learn"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_8" />
+
+                <View
+                    android:layout_width="@dimen/dp_0_5"
+                    android:layout_height="@dimen/dp_12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_learn_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:text="@string/minute"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_8" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+
+                android:padding="@dimen/dp_5"
+                android:text="@string/manage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_8" />
+
+            <LinearLayout
+                android:id="@+id/llChoose"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+
+                    android:id="@+id/tv_choose_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/choose_all"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_7" />
+
+                <View
+                    android:layout_width="@dimen/dp_0_5"
+                    android:layout_height="@dimen/dp_7"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_7" />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:padding="@dimen/dp_2"
+                    android:text="@string/delete"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_7" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_learn_record"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/dp_11"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="@dimen/dp_90"
+            android:layout_centerInParent="true"
+            android:src="@drawable/search_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/record_tip"
+            android:textColor="@color/dark_gray_text"
+            android:textSize="@dimen/sp_7" />
+    </RelativeLayout>
+</RelativeLayout>

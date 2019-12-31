@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bac"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_166"
+                app:AutoPlayTime="5000"
+                app:clipChildrenLeftRightMargin="@dimen/dp_148"
+                app:isClipChildrenMode="true"
+                app:isClipChildrenModeLessThree="true"
+                app:isShowNumberIndicator="false"
+                app:pageChangeDuration="1000"
+                app:pointsVisibility="false"
+                app:tipTextSize="12sp"
+                app:viewpagerMargin="@dimen/dp_8">
+
+            </com.stx.xhb.xbanner.XBanner>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:layout_marginRight="@dimen/dp_7"
+                android:layout_marginBottom="@dimen/dp_7"
+                android:background="@drawable/normal_item_bac">
+
+                <RelativeLayout
+                    android:id="@+id/rl_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5">
+
+                    <TextView
+                        android:id="@+id/tv_recommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_13"
+                        android:layout_marginTop="@dimen/dp_9"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_11" />
+
+                    <TextView
+                        android:id="@+id/tv_recommend_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_9"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:drawableRight="@drawable/refresh"
+                        android:drawablePadding="@dimen/dp_2"
+                        android:text="@string/change"
+                        android:textColor="#4A4A4A"
+                        android:textSize="@dimen/sp_7" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_recommend_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:layout_marginBottom="@dimen/dp_13"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_recommend_empty"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_71"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/empty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_below="@id/iv_recommend_empty"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="暂无课程内容"
+                        android:textColor="#7F000000"
+                        android:textSize="@dimen/sp_8" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_recommend"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_7"
+                android:background="@drawable/normal_item_bac">
+
+                <TextView
+                    android:id="@+id/tv_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginTop="@dimen/dp_9"
+                    android:text="最受欢迎"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_11" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_popular_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:layout_marginBottom="@dimen/dp_13"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_empty"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_71"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/empty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_below="@id/iv_empty"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="暂无课程内容"
+                        android:textColor="#7F000000"
+                        android:textSize="@dimen/sp_8" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_popular"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_marginRight="@dimen/dp_7"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@drawable/normal_item_bac">
+
+                <RelativeLayout
+                    android:id="@+id/rl_free"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_9">
+
+                    <TextView
+                        android:id="@+id/tv_free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_13"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_11" />
+
+                    <TextView
+                        android:id="@+id/tv_free_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:drawableRight="@drawable/more"
+                        android:drawablePadding="@dimen/dp_2"
+                        android:text="@string/look_more"
+                        android:textColor="#4A4A4A"
+                        android:textSize="@dimen/sp_7" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_free_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:layout_marginBottom="@dimen/dp_13"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_free_empty"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_71"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/empty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_below="@id/iv_free_empty"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="暂无课程内容"
+
+                        android:textColor="#7F000000"
+                        android:textSize="@dimen/sp_8" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_free"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_free"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

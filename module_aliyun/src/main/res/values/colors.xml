@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="ic_default_bg_color">#33000000</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="colorWhiteE4E7ED">#E4E7ED</color>
+
+    <color name="hint_color">#F5A623</color>
+    <color name="exercise_color">#70B7FF</color>
+    <color name="analysis_color">#9AD45A</color>
+    <color name="note_color">#F76161</color>
+
+    <color name="gray_font">#97989A</color>
+    <color name="alivc_white">#e7e7e7</color>
+    <color name="alivc_blue">#379DF2</color>
+    <color name="alivc_green">#57AB44</color>
+    <color name="alivc_orange">#EE7C33</color>
+    <color name="alivc_yellow">#FDCF00</color>
+    <color name="alivc_red">#E94033</color>
+    <color name="alivc_info_text_duration">#9f9e9e</color>
+    <color name="alivc_dialog_error_bg">#b2000000</color>
+    <color name="alivc_dialog_gesture_bg">#66ffffff</color>
+    <color name="alivc_gesture_text_color">#333333</color>
+    <color name="alivc_common_font_white_light">#e7e7e7</color>
+    <color name="alivc_common_bg_cyan_light">#00C1DE</color>
+
+    <color name="alivc_color_rate_item">#4c000000</color>
+
+    <color name="alivc_color_player_setting_background">#1e222d</color>
+    <color name="alivc_color_player_tab_selected">#00FFFF</color>
+    <color name="alivc_color_player_tab_defaut">#D8D8D8</color>
+
+    <color name="alivc_color_player_background">#1e222d</color>
+    <color name="alivc_color_player_colorPrimary">#00FFFF</color>
+    <color name="alivc_color_player_colorAccent">#00c1de</color>
+    <color name="alivc_color_player_clear_logs">#373d41</color>
+    <color name="alivc_color_player_manager_background">#373d41</color>
+    <color name="alivc_color_player_setting">#373d41</color>
+    <color name="colorPrimary_alpha_five">#1affffff</color>
+    <color name="colorPrimary_alpha_ten">#0cffffff</color>
+    <color name="colorPrimary_alpha_fifteen">#26ffffff</color>
+
+    <color name="add_download_info_background">#373d41</color>
+    <color name="delete_download_info_background">#373d41</color>
+    <color name="alivc_color_player_list_item_press">#2d3342</color>
+
+    <color name="alivc_color_action_list_dialog_background">#1e2321</color>
+    <color name="alivc_color_gray">#D8D8D8</color>
+    <color name="alivc_dialog_bg_translucent">#E6373d41</color>
+    <color name="alivc_barrage_switch_background">#80D8D8D8</color>
+    <color name="normal_bac">#F6F7F7</color>
+    <color name="gray_text">#909399</color>
+    <color name="dark_gray_text">#4A4A4A</color>
+    <color name="top_status">#60B3E5</color>
+    <color name="top_tab">#FDCF00</color>
+    <color name="user_center_bac">#EFEFEF</color>
+
+    <color name="colorF4F5F9">#F4F5F9</color>
+    <color name="color51A8FF">#51A8FF</color>
+    <color name="black303133">#303133</color>
+    <color name="yellowFDCF00">#FDCF00</color>
+    <color name="grayF2F2F2">#F2F2F2</color>
+    <color name="gray909399">#909399</color>
+    <color name="black4A4A4A">#4A4A4A</color>
+    <color name="originEF7459">#EF7459</color>
+    <color name="green57B87F">#57B87F</color>
+    <color name="green71B823">#71B823</color>
+    <color name="blue4485F4">#4485F4</color>
+    <color name="black65">#65000000</color>
+    <color name="gray979797">#979797</color>
+</resources>

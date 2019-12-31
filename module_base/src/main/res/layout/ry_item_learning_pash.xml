@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_30"
+    android:background="@color/grayF2F2F2">
+
+    <TextView
+        android:id="@+id/tv_item_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="一年级"
+        android:textColor="@color/gray909399"
+        android:textSize="@dimen/sp_9" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/tv_item_grade"
+        android:padding="@dimen/dp_6"
+        android:src="@drawable/select"
+        android:visibility="visible" />
+</RelativeLayout>

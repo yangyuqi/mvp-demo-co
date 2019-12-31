@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="match_parent"
+    android:background="#65000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_play_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_speed"
+        android:textColor="@color/alivc_white"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:id="@+id/tv_speed_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_speed_value_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="left"
+            android:text="@string/speed_value_1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tv_speed_value_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="left"
+            android:text="@string/speed_value_2"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tv_speed_value_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="left"
+            android:text="@string/speed_value_3"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tv_speed_value_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="left"
+            android:text="@string/speed_value_4"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tv_speed_value_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="left"
+            android:text="@string/speed_value_5"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+
+</LinearLayout>

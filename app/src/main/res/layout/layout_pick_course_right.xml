@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_23">
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_5"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:background="@drawable/dui_gou"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/check_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_21"
+        android:gravity="center_vertical"
+        android:text="全部【基础篇】必修1第一章集合与函数概念"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_8" />
+</RelativeLayout>
